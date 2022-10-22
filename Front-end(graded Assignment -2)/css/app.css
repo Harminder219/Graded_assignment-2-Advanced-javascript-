@@ -1,0 +1,279 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.loginbody
+{
+    background-color: rgb(214, 43, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    position: relative;
+    width: 40%;
+    height: 55%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(28, 24, 24);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 50px black;
+}
+
+.section
+{
+    width: 80%;
+    position: relative;
+    
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.username,.password
+{
+    width: 80%;
+    padding-top: 40px;
+    background-color:rgb(28, 24, 24) ;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 20px;
+    outline: none;
+  
+}
+
+ .section label
+{
+   position: absolute;
+   left: 5%;
+   bottom: 30%;
+   font-size: 20px;
+   transition:  0.5s ;
+  
+}
+
+input:focus ~ label,
+input:valid ~ label
+
+{
+    top:0;
+    font-size: 17px;
+    color: aquamarine;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbtn
+{
+    
+
+    width: 50%;
+    padding: 10px 0 ;
+    background-color: rgba(235, 130, 10, 0.822);
+    font-size: 20px;
+
+    color: white;
+    border-radius: 10px;
+}
+
+.hide
+{
+    display: none;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+.welcomesection
+{
+    color: brown;
+    min-height: 100vh;
+
+  
+}
+
+.welcomesection h1
+{
+    font-size: 50px;
+    margin-top: 50%;
+}
+
+
+.headsec
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.headsec button
+{
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: 0;
+}
+
+.headsec button:active
+{
+    background-color: gold;
+}
+
+
+.inputsec
+{
+   flex: 0.5;
+    width: 40%; 
+    padding-left: 5px;
+    height: 40px;
+    font-size: 20px;
+}
+.serachresume
+{
+    
+    background-color: bisque;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.rightsec p
+{
+    margin:10px 0 10px 20px;
+}
+
+
+
+.resume
+{
+    border: 1px solid black;
+    width: 60%;
+    height: 90vh;
+    overflow: scroll;
+    
+}
+.resumehead
+{
+    height: 20%;
+    background-color: brown;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+  
+}
+
+.resumehead .info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 28%;
+
+}
+
+.resumehead img
+{
+ 
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.resumebody
+{
+    background-color: white;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+.leftsec
+{
+  background-color: palevioletred;
+  padding: 0 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline ;
+}
+
+.leftsec h2
+{
+    margin-top: 20px;
+}
+.leftsec ul li
+{
+   list-style: none;
+   color: black;  
+}
+
+
+@media screen and (max-width:1327px) {
+
+    .container
+    {
+        width: 90%;
+        height: 60%;
+    }
+    
+
+    .username,.password
+    {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:579px) {
+ 
+
+    .resume
+    {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width:390px) {
+ 
+
+    .resume
+    {
+        width: 100%;
+    }
+    .resumebody
+    {
+        grid-template-columns: 120px 1fr;
+
+    }
+    .resumehead
+    {
+        height: 30%;
+
+    }
+
+}

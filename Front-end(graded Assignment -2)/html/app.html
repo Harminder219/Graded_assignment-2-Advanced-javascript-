@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <div class="loginbody">
+
+    <div class="container">
+      <h2 class="errorlogin" style="color: red; display: none;">Invalid Username or Password</h2>  
+      <form  class="loginform">
+           <div class="section"> 
+
+               <input name="username" class="username" type="text" autocomplete="off" required>
+               <label>User Name</label>
+           </div>
+
+           <div class="section">
+            <input name="password" class="password" type="password" autocomplete="off" required >
+            <label >Password</label>
+
+           </div>
+
+           <button class="loginbtn" type="submit">Login</button>
+
+      </form>
+        
+    </div>
+    
+</div>
+    <div  class="hide serachresume">
+        <div class="headsec">
+            <button type="button" class="prev hidden">Prev</button>
+            <input type="text" placeholder="Search for keyword to filter the result" class="inputsec">
+            <button type="button" class="next hidden">Next</button>
+
+        </div>
+       
+        <div class="welcomesection ">
+          <h1 >You are welcome!!! <span> 😀 </span></h1>  
+           
+        </div>
+
+        <div class="hide resume">
+              
+            
+
+        </div>
+
+
+
+    
+    </div>
+
+    <script type="module"  src="../script/app.js"></script>
+</body>
+</html>
